@@ -446,7 +446,7 @@ class AdldapUsers extends AbstractAdldapQueryable
         $length = strlen($password);
 
         for ($i = 0; $i < $length; $i++) {
-            $encoded .= "{$password{$i}
+            $encoded .= "{$password[$i]
             }\000";
         }
 
